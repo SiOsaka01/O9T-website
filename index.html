@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/nineT.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url('/images/peakDis.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <title>Nine Trigs Walk</title>
+</head>
+
+<body>
+    <div class="OuterRing">
+        <header>
+            <div><a href="#"><img src="/images/logoHFEW.png" id="logo" alt="logo" height="100" title="Homepage Link"
+                        style="padding: 5px;"></a></div>
+            <!-- Sidebar (hidden by default) -->
+            <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+                style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+                <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+                <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Homepage</a>
+                <a href="/pages/about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+                <a href="/pages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+                <a href="/pages/shop.html" onclick="w3_close()" class="w3-bar-item w3-button">Shop</a>
+                <a href="/pages/walks.html" onclick="w3_close()" class="w3-bar-item w3-button">Walks</a>
+
+            </nav>
+
+            <!-- Top menu -->
+            <div class="w3-top">
+                <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+                    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+                    <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+                    <ul>
+                        <li><button onclick="musicOff();" id="musB" title="click to mute the music">Music</button></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                        <li><a href="/pages/shop.html">Shop</a></li>
+                        <li><a href="/pages/walks.html" title="Oldham 9 Trig Challenge">O9T</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-center w3-padding-16" id="titleM">Happy Feet Epic Walkers Homepage</div>
+            <p style="background-color: transparent; text-align: center;">Welcome. Our mission is to find worthy hikers
+                to complete the <strong>brutally-gruelling</strong> epic walk titled 'O9T' in the <a
+                    href="https://www.peakdistrict.gov.uk/home">Peak District National Park</a>.</p>
+        </header>
+
+        <main>
+            <div id="bootCTA">
+                <a href="/pages/walks.html"><img src="/media/boot_transp.svg" alt="boot" height="100"
+                        title="Click for O9T challenge details"></a>
+            </div>
+
+
+            <audio controls autoplay muted id="musica"> <!--muted-->
+                <source src="/media/last_goodbye.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </main>
+
+        <!-- Footer -->
+        <footer id="foot">
+            <div class="w3-third">
+                <div>
+                    <span><a href="https://www.facebook.com/groups/1768738856810053/" class="fa fa-facebook"
+                            title="Facebook"></a></span>
+                    <!-- <span><a href="#" class="fa fa-twitter" title="Twitter"></a> </span>
+            <span><a href="#" class="fa fa-pinterest" title="Pinterest"></a> </span>
+            <span><a href="#" class="fa fa-linkedin" title="Linked-In"></a> </span>
+            <span><a href="#" class="fa fa-instagram" title="Instagram"></a> </span>
+            <span><a href="#" class="fa fa-youtube" title="YouTube"></a> </span>
+            <span><a href="#" class="fa fa-google" title="Google"></a> </span>
+            <span><a href="#" class="fa fa-snapchat-ghost" title="SnapChat"></a> </span>
+            <span><a href="#" class="fa fa-skype" title="Skype"></a> </span> -->
+
+                </div>
+            </div>
+
+
+
+        </footer>
+    </div> <!-- closing outer div -->
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        function musicOff() {
+            document.getElementById("musica").style.display = "block";
+            document.getElementById("musB").style.display = "none";
+            let vid = document.getElementById("musica");
+            vid.muted = false;
+        }
+    </script>
+
+</body>
+
+</html>
