@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Happy Feet Online Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/nineT.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="OuterRing">
+    <div><a href="/index.html"><img src="/images/logoHFEW.png" alt="logo" height="100" title="Homepage Link"
+          style="padding: 5px; cursor: pointer;"></a></div>
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+      style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+      <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Homepage</a>
+      <a href="/pages/about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+      <a href="/pages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+      <a href="/pages/shop.html" onclick="w3_close()" class="w3-bar-item w3-button">Shop</a>
+      <a href="/pages/walks.html" onclick="w3_close()" class="w3-bar-item w3-button">Walks</a>
+
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+      <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+        <div class="w3-center w3-padding-16" id="titleM">Happy Feet Epic Walkers Dropship Store</div>
+        <div class="OuterRing">
+        </div>
+      </div>
+
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+          <div class="w3-quarter">
+            <img src="/images/boots.png" alt="boots" style="width:100%">
+            <h3><a href="https://amzn.eu/d/dql5MKq">Unisex Hiking Boots</a></h3>
+            <p>Price on Amazon £70.00 <button class="buyit">Buy Now</button></p>
+          </div>
+          <div class="w3-quarter">
+            <img src="/images/bag.png" alt="bag" style="width:100%">
+            <h3><a href="https://amzn.eu/d/gjrCIVJ">High Visibility Rucksack</a></h3>
+            <p>Price on Amazon £19.99 <button class="buyit">Buy Now</button></p>
+          </div>
+          <div class="w3-quarter">
+            <img src="/images/torchHat.png" alt="hat" style="width:100%">
+            <h3><a href="https://amzn.eu/d/5CGUrfl">Beanie with torch</a></h3>
+            <p>Price on Amazon £9.99 <button class="buyit">Buy Now</button></p>
+          </div>
+          <div class="w3-quarter">
+            <img src="/images/gloves.png" alt="gloves" style="width:100%">
+            <h3><a href="https://amzn.eu/d/08pXYTO">Hiking Gloves</a></h3>
+            <p>Price on Amazon £9.97 <button class="buyit">Buy Now</button></p>
+          </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+          <div class="w3-quarter">
+            <img src="/images/map.png" alt="map" style="width:100%">
+            <h3><a href="https://amzn.eu/d/fvBIf7z">OS Map Peak-District</a></h3>
+            <p>Price on Amazon £8.99 <button class="buyit">Buy Now</button></p>
+          </div>
+          <div class="w3-quarter">
+            <img src="/images/bottle.png" alt="bottle" style="width:100%">
+            <h3><a href="https://amzn.eu/d/2By15JL">1 litre Water Bottle</a></h3>
+            <p>Price on Amazon £7.99 <button class="buyit">Buy Now</button></p>
+          </div>
+          <div class="w3-quarter">
+            <img src="/images/stick.png" alt="stick" style="width:100%">
+            <h3><a href="https://amzn.eu/d/hxdoDIo">Hiking Pole</a></h3>
+            <p>Price on Amazon £9.96 <button class="buyit">Buy Now</button></p>
+          </div>
+          <div class="w3-quarter">
+            <img src="/images/wpp.png" alt="pants" style="width:100%">
+            <h3><a href="https://amzn.eu/d/iBshKnp">Hiking Pants</a></h3>
+            <p>Price on Amazon £21.99 <button class="buyit">Buy Now</button></p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+
+</body>
+
+</html>

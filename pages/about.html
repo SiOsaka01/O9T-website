@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/nineT.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+</head>
+
+<body style="background: linear-gradient(#64bde6, #e5a291);">
+    <div class="OuterRing">
+        <header>
+            <div>
+                <!--  Logo  -->
+                <a href="/index.html"><img src="/images/logoHFEW.png" alt="logo" height="100" title="Homepage Link"
+                        style="padding: 5px; cursor: pointer;"></a>
+            </div>
+            <!-- Sidebar (hidden by default) -->
+            <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+                style="display:none;z-index:2;width:40%;min-width:300px; background-color:transparent;" id="mySidebar">
+                <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+                <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Homepage</a>
+                <a href="/pages/about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+                <a href="/pages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+                <a href="/pages/shop.html" onclick="w3_close()" class="w3-bar-item w3-button">Shop</a>
+                <a href="/pages/walks.html" onclick="w3_close()" class="w3-bar-item w3-button">Walks</a>
+
+            </nav>
+
+            <!-- Top menu -->
+            <div class="w3-top">
+                <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+                    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+                    <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+                    <div class="w3-center w3-padding-16" id="titleM">Happy Feet Epic Walkers : About Us</div>
+                </div>
+            </div>
+        </header>
+
+        <div id="container">
+            <div id="textCont">
+                <h3>My Story by Si Osaka</h3>
+                <p>One of the most serious challenges middle-aged men face, is struggling with their mental health
+                    issues. With pressure, comes stress and without a suitable outlet, many men become depressed. In
+                    some cases this can escalate. Having a community where men can talk openly about their issues, in a
+                    safe environment and alongside others who are struggling with their lives; is what my experience at
+                    Andy's Man Club is all about.<br>Many large towns and cities around the UK have a branch of Andy's
+                    Man Club. Most guys who attend regularly agree it is a big help, with sharing their issues with
+                    other guys facing their own storms.<br>From my experience of Andy's I have found that talking works
+                    well, but additionally walking and talking keeps the feel-good factor alive. Just a few miles every
+                    2 days helps us in many ways. Like our fitness, mental health, weight maintenance, circulation, diet
+                    and sleeping; all these processes are positively influenced by walking.<br>I set up a Facebook Group
+                    in summer of 2022, so friends and family of members of Andy's Man Club could post and read of their
+                    adventures with walking. When people walk, make videos and take photos, this group site will store
+                    their posts, stories and their shares.<br>This website is dedicated to all the people who have links
+                    to Andy's Man Club and like to walk.<br><br>As a distance walker I set up the group with an extra
+                    feature, walks that challenge a fit person who walks strenuous walks. I coined the phrase 'Epic
+                    Walks'. Any walk over 15 miles qualifies for an epic walk. Though a true Admin-Level Epic Walk is
+                    any walk covering a minimum of 50 miles in any 24 hour period. Not for the faint hearted.<br></p>
+            </div>
+
+            <div id="image">
+                <a href="https://andysmanclub.co.uk/home">
+                    <h3>Andy's Man Club Oldham</h3>
+                </a>
+                <a href="https://www.facebook.com/groups/1768738856810053/"> <img src="/images/hfew.png" alt="hfew logo"
+                        width="400"></a>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
